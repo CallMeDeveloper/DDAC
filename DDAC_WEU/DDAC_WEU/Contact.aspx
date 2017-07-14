@@ -1,17 +1,21 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="DDAC_WEU.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h2>Contact the Maersk Group</h2>
+    <h3>Headquarters office</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+         The Maersk Group<br />
+        Esplanaden 50<br />
+        1098 Copenhagen K<br />
+        Denmark<br />
+        <abbr title="Phone">Phone:</abbr>
+        +45 3363 3363 <br />
+        <abbr title="Fax">Fax:</abbr>
+        +45 3363 30030
     </address>
 
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        <strong>Facebook:</strong>   <a href="https://www.facebook.com/MaerskGroup">https://www.facebook.com/MaerskGroupm</a><br />
+        <strong>Linkedin:</strong> <a href="https://www.linkedin.com/company/maersk-group">https://www.linkedin.com/company/maersk-group</a>
     </address>
 </asp:Content>

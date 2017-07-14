@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add_shipment.aspx.cs" Inherits="DDAC_WEBAPP.Add_shipment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add_shipment.aspx.cs" Inherits="DDAC_WEU.Add_shipment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1> New Shipment Information </h1>
     <h3>Shipment Details</h3>
@@ -17,8 +17,13 @@
         <asp:TextBox ID="Client" runat="server"></asp:TextBox>
     </p>
     <p> Weight (kg):
-        <asp:TextBox ID="Weight" runat="server"></asp:TextBox>
+        <asp:TextBox ID="weight" runat="server"></asp:TextBox>
     </p>
+    <br />
+    <br />
+    <asp:Button Style="margin-right:20px" ID="btnAdd" runat="server" Text="Add Shipment" OnClick="btnAdd_Click"/>
+    <asp:Button ID="btnClear" runat="server" Text="Cancel Shipment" OnClick="btnClear_Click"/>
+    &nbsp;
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbConnectionString %>" DeleteCommand="DELETE FROM [ShipmentInfo] WHERE [Id] = @Id" InsertCommand="INSERT INTO [ShipmentInfo] ([From], [To], [Date], [Client Name], [Weight(kg)]) VALUES (@From, @To, @Date, @Client_Name, @column1)" SelectCommand="SELECT * FROM [ShipmentInfo]" UpdateCommand="UPDATE [ShipmentInfo] SET [From] = @From, [To] = @To, [Date] = @Date, [Client Name] = @Client_Name, [Weight(kg)] = @column1 WHERE [Id] = @Id">
         <DeleteParameters>
             <asp:Parameter Name="Id" Type="Int32" />
@@ -39,10 +44,5 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
 </asp:SqlDataSource>
-    <br />
-    <br />
-    <asp:Button Style="margin-right:20px" ID="btnAdd" runat="server" Text="Add Shipment" OnClick="btnAdd_Click"/>
-    <asp:Button ID="btnClear" runat="server" Text="Cancel Shipment" OnClick="btnClear_Click"/>
-    &nbsp;
-
 </asp:Content>
+

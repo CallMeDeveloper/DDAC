@@ -31,13 +31,13 @@ namespace DDAC_WEBAPP {
         protected global::System.Web.UI.WebControls.TextBox To;
         
         /// <summary>
-        /// Calendar control.
+        /// Date control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar;
+        protected global::System.Web.UI.WebControls.TextBox Date;
         
         /// <summary>
         /// Client control.
@@ -49,13 +49,22 @@ namespace DDAC_WEBAPP {
         protected global::System.Web.UI.WebControls.TextBox Client;
         
         /// <summary>
-        /// weight control.
+        /// Weight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox weight;
+        protected global::System.Web.UI.WebControls.TextBox Weight;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// btnAdd control.
